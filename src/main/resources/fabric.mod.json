@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ninjacheat",
+  "version": "${version}",
+
+  "name": "NinjaCheat",
+  "description": "An open-source Minecraft utility client inspired by CheatUtils, FDPClient and FullBright. Educational purposes only.",
+  "authors": [
+    "NinjaTech AI",
+    "Inspired by: Zergatul (CheatUtils), CCBlueX (LiquidBounce/FDPClient), L3nnart_ (FullBright)"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ninjatech/NinjaCheat",
+    "sources": "https://github.com/ninjatech/NinjaCheat"
+  },
+
+  "license": "MIT",
+  "icon": "assets/ninjacheat/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ninjacheat.client.NinjaCheatClient"
+    ]
+  },
+  "mixins": [
+    "ninjacheat.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
